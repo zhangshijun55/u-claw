@@ -56,7 +56,7 @@ echo "=========================================="
 echo ""
 echo "── 文件存在性 ──"
 
-for f in "Windows-插上U盘直接用.bat" "Mac-插上U盘直接用.command" "Windows-全部功能菜单(17项).bat" "Mac-全部功能菜单(17项).command" "Windows-安装到电脑(永久).bat" "Mac-安装到电脑(永久).command" "使用说明.txt" "中国用户指南.txt"; do
+for f in "Windows-从U盘启动.bat" "Mac-从U盘启动.command" "Windows-全部功能.bat" "Mac-全部功能.command" "Windows-安装到电脑.bat" "Mac-安装到电脑.command" "使用说明.txt" "中国用户指南.txt"; do
     if [ -f "$UCLAW_SCRIPTS/$f" ]; then
         pass "存在: $f"
     else
@@ -68,7 +68,7 @@ done
 echo ""
 echo "── macOS 脚本语法检查 ──"
 
-for f in "Mac-插上U盘直接用.command" "Mac-全部功能菜单(17项).command" "Mac-安装到电脑(永久).command"; do
+for f in "Mac-从U盘启动.command" "Mac-全部功能.command" "Mac-安装到电脑.command"; do
     if bash -n "$UCLAW_SCRIPTS/$f" 2>/dev/null; then
         pass "语法正确: $f"
     else
@@ -79,7 +79,7 @@ done
 # ── 运行.bat 测试 ──
 echo ""
 echo "── 运行.bat ──"
-BAT_RUN="$UCLAW_SCRIPTS/Windows-插上U盘直接用.bat"
+BAT_RUN="$UCLAW_SCRIPTS/Windows-从U盘启动.bat"
 
 check "设置 UTF-8 编码" "$BAT_RUN" "chcp 65001"
 check "设置便携模式 OPENCLAW_HOME" "$BAT_RUN" "OPENCLAW_HOME"
@@ -96,7 +96,7 @@ check "版本号 v1.1" "$BAT_RUN" "v1.1"
 # ── 运行.command 测试 ──
 echo ""
 echo "── 运行.command ──"
-CMD_RUN="$UCLAW_SCRIPTS/Mac-插上U盘直接用.command"
+CMD_RUN="$UCLAW_SCRIPTS/Mac-从U盘启动.command"
 
 check "设置便携模式 OPENCLAW_HOME" "$CMD_RUN" "OPENCLAW_HOME"
 check "设置便携模式 OPENCLAW_STATE_DIR" "$CMD_RUN" "OPENCLAW_STATE_DIR"
@@ -113,7 +113,7 @@ check_not "不依赖 pnpm" "$CMD_RUN" "pnpm"
 # ── 启动菜单.bat 测试 ──
 echo ""
 echo "── 启动菜单.bat ──"
-BAT_MENU="$UCLAW_SCRIPTS/Windows-全部功能菜单(17项).bat"
+BAT_MENU="$UCLAW_SCRIPTS/Windows-全部功能.bat"
 
 check "设置 UTF-8 编码" "$BAT_MENU" "chcp 65001"
 check "便携模式 OPENCLAW_HOME" "$BAT_MENU" "OPENCLAW_HOME"
@@ -130,7 +130,7 @@ check_not "不依赖 pnpm" "$BAT_MENU" "pnpm"
 # ── 启动菜单.command 测试 ──
 echo ""
 echo "── 启动菜单.command ──"
-CMD_MENU="$UCLAW_SCRIPTS/Mac-全部功能菜单(17项).command"
+CMD_MENU="$UCLAW_SCRIPTS/Mac-全部功能.command"
 
 check "便携模式 OPENCLAW_HOME" "$CMD_MENU" "OPENCLAW_HOME"
 check "有 QQ 选项" "$CMD_MENU" "QQ"
@@ -145,7 +145,7 @@ check "自动打开浏览器" "$CMD_MENU" 'open "$URL"'
 # ── 安装到电脑.bat 测试 ──
 echo ""
 echo "── 安装到电脑.bat ──"
-BAT_INSTALL="$UCLAW_SCRIPTS/Windows-安装到电脑(永久).bat"
+BAT_INSTALL="$UCLAW_SCRIPTS/Windows-安装到电脑.bat"
 
 check "设置 UTF-8 编码" "$BAT_INSTALL" "chcp 65001"
 check "安全提醒" "$BAT_INSTALL" "安全提醒"
@@ -162,7 +162,7 @@ check_not "不备份 .env" "$BAT_INSTALL" "env-backup"
 # ── 安装到电脑.command 测试 ──
 echo ""
 echo "── 安装到电脑.command ──"
-CMD_INSTALL="$UCLAW_SCRIPTS/Mac-安装到电脑(永久).command"
+CMD_INSTALL="$UCLAW_SCRIPTS/Mac-安装到电脑.command"
 
 check "安全提醒" "$CMD_INSTALL" "安全提醒"
 check "共享电脑警告" "$CMD_INSTALL" "共享电脑"

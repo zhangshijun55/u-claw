@@ -45,9 +45,9 @@
 # https://github.com/dongsheng123132/u-claw/releases
 
 # After extracting / 解压后：
-# Mac: double-click "Mac-插上U盘直接用.command"
-# Linux: bash ./Linux-插上U盘直接用.sh
-# Win: double-click "Windows-插上U盘直接用.bat"
+# Mac: double-click "Mac-从U盘启动.command"
+# Linux: bash ./Linux-从U盘启动.sh
+# Win: double-click "Windows-从U盘启动.bat"
 ```
 
 ### Option 2: Build Your Own / 自己构建
@@ -84,13 +84,13 @@ Just copy the `U-Claw/` folder. That's it.
 ```
 U-Claw/                            (~1.3GB, 8GB USB minimum)
 │
-├── Mac-插上U盘直接用.command         ← macOS: plug USB & run
-├── Windows-插上U盘直接用.bat        ← Windows: plug USB & run
-├── Linux-插上U盘直接用.sh           ← Linux: plug USB & run
-├── Mac-全部功能菜单(17项).command    ← macOS: full feature menu
-├── Windows-全部功能菜单(17项).bat   ← Windows: full feature menu
-├── Mac-安装到电脑(永久).command      ← Install to Mac permanently
-├── Windows-安装到电脑(永久).bat     ← Install to Windows permanently
+├── Mac-从U盘启动.command             ← macOS: run from USB
+├── Windows-从U盘启动.bat            ← Windows: run from USB
+├── Linux-从U盘启动.sh               ← Linux: run from USB
+├── Mac-全部功能.command              ← macOS: full feature menu
+├── Windows-全部功能.bat             ← Windows: full feature menu
+├── Mac-安装到电脑.command            ← Install to Mac permanently
+├── Windows-安装到电脑.bat           ← Install to Windows permanently
 ├── 使用说明.txt                    ← Basic instructions
 ├── 中国用户指南.txt                 ← China quick-start guide
 ├── 教程-OpenClaw中国区完全指南.md   ← Full tutorial (12 chapters)
