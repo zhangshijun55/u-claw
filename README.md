@@ -24,7 +24,7 @@ U-Claw（虾盘）是一个**制作教程 + 全套源代码**，教你把 [OpenC
 
 ---
 
-> ⚠️ **新手提示：** 本仓库为开源 1.0 版本，构建需要一定的技术基础（Node.js / 命令行 / 脚本）和编程工具，不建议零基础用户贸然下载自行折腾。**想省事的话，推荐直接购买商业版（2.0）**，开箱即用，无需折腾。
+> ⚠️ **新手提示：** 本仓库为开源 1.0 版本，构建需要一定的技术基础（Node.js / 命令行 / 脚本）和编程工具，不建议零基础用户贸然下载自行折腾。**想省事的话，推荐直接购买商业版（2.0）**，开箱即用，无需折腾。当然，AI 就像自行车——它是工具，不是制造焦虑的理由。没有"来不来得及"，只有早用和晚用。多折腾、多用，就像骑车一样，上手了自然就会了。
 >
 > 🚀 **2.0 商业版** 是全面升级版，包含 U 盘内运行的**本地模型**（离线可用，无需联网 API），更多端侧 AI 能力持续迭代。我们也在搭建**端侧 AI 落地社区**，致力于成为便携式端侧 AI 的中国领跑者。
 >
@@ -268,7 +268,7 @@ The codebase itself is the USB file skeleton. Run `setup.sh` to download large d
 
 ---
 
-> ⚠️ **Heads up for beginners:** This repo is the open-source 1.0 version. Building it requires technical knowledge (Node.js / CLI / scripting). If you just want something that works out of the box, **we recommend purchasing the commercial 2.0 edition** instead — no setup hassle.
+> ⚠️ **Heads up for beginners:** This repo is the open-source 1.0 version. Building it requires technical knowledge (Node.js / CLI / scripting). If you just want something that works out of the box, **we recommend purchasing the commercial 2.0 edition** instead — no setup hassle. That said, AI is like riding a bike — it's a tool, not a source of anxiety. There's no "too late to start", only sooner or later. Tinker with it, use it often, and it'll click before you know it.
 >
 > 🚀 **Version 2.0 (commercial)** is a major upgrade featuring **on-device local models** that run entirely inside the USB drive — no internet or API key required. We're building an edge AI community in China, aiming to be the leading platform for portable edge AI.
 >
