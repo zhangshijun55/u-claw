@@ -2,20 +2,32 @@
   "latest": {
     "date": "2026-04-02",
     "tip": {
-      "title": { "zh": "便携模式：配置跟着 U 盘走", "en": "Portable Mode: Config Travels with Your USB" },
-      "content": {
-        "zh": "将 U-Claw 以便携模式运行时，所有配置、技能、模型 API Key 都保存在 U 盘本身，而非电脑上。换一台电脑插上 U 盘，立刻恢复完整工作环境。特别适合需要在多台电脑之间切换的开发者——出差时带上 U 盘，到哪里都是你熟悉的 AI 助手。",
-        "en": "Running U-Claw in portable mode saves all configs, skills, and API keys on the USB drive itself, not the host computer. Plug into any machine and instantly restore your full environment — perfect for developers who work across multiple PCs or need a consistent AI setup on the go."
+      "title": {
+        "zh": "一键切换模型：快速找到最佳助手",
+        "en": "One-Click Model Switching: Find Your Best Assistant Fast"
       },
-      "tag": { "zh": "技巧", "en": "Tip" }
+      "content": {
+        "zh": "在 U-Claw 的对话界面，点击右上角的模型名称（如“DeepSeek”），即可快速下拉选择其他 7 款国产大模型。无需进入复杂设置，就能根据当前任务（如代码、创作、分析）即时切换。例如，写代码时用 DeepSeek，头脑风暴时换 Kimi，让每个模型发挥其专长。",
+        "en": "In the U-Claw chat interface, click the model name (e.g., 'DeepSeek') in the top-right corner to quickly pull down and select from the other 7 domestic LLMs. Switch models instantly for different tasks (coding, creative writing, analysis) without navigating complex settings. For example, use DeepSeek for coding and switch to Kimi for brainstorming, leveraging each model's strengths."
+      },
+      "tag": {
+        "zh": "技巧",
+        "en": "Tip"
+      }
     },
     "case": {
-      "title": { "zh": "用 U-Claw 一键审查 PR 代码", "en": "One-Click PR Code Review with U-Claw" },
-      "content": {
-        "zh": "某团队将 U-Claw 接入企业微信，配置「代码审查」技能。开发者提交 PR 后，直接将 diff 发给 AI，几秒钟内收到详细的审查意见：潜在 Bug、性能问题、代码风格建议一应俱全。审查效率提升 60%，同时覆盖了以往人工容易遗漏的边界条件。",
-        "en": "A dev team connected U-Claw to their enterprise WeChat and configured the 'Code Review' skill. Developers paste PR diffs directly to the AI and get detailed feedback in seconds — bugs, performance issues, and style suggestions included. Review efficiency improved 60%, with better coverage of edge cases that manual review often misses."
+      "title": {
+        "zh": "离线会议纪要：用 U-Claw 自动总结飞书讨论",
+        "en": "Offline Meeting Minutes: Automatically Summarize Lark Discussions with U-Claw"
       },
-      "tag": { "zh": "案例", "en": "Case" }
+      "content": {
+        "zh": "市场团队在飞书上进行了一场关于新品的激烈讨论，产生了大量消息。由于涉及敏感信息，无法使用在线 AI。成员将完整的聊天记录导出为文本文件，在离线环境的 U-Claw 中，使用“文档总结”技能，并选择通义千问模型进行处理。几分钟内，U-Claw 就生成了清晰的观点总结、待办事项列表和争议点，极大提升了会议效率。",
+        "en": "The marketing team had a heated discussion about a new product on Lark, generating a large volume of messages. Due to sensitive information, online AI was not an option. A member exported the full chat history as a text file and used U-Claw's 'Document Summarization' skill offline, selecting the Qwen model. Within minutes, U-Claw produced a clear summary of key points, an action item list, and noted disagreements, significantly improving meeting follow-up efficiency."
+      },
+      "tag": {
+        "zh": "案例",
+        "en": "Case"
+      }
     }
   },
   "history": []
